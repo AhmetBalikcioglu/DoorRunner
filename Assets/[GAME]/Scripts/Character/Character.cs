@@ -33,4 +33,15 @@ public class Character : MonoBehaviour
 
         CharacterManager.Instance.RemoveCharacter(this);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        DoorBase door = other.GetComponent<DoorBase>();
+        if (door != null)
+        {
+            IsControlable = true;
+            door.InputSelection();
+            //Animation Trigger
+        }
+    }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Managers : Singleton<Managers>
+public interface IBreakeable
 {
-    
+    void Break();
 }

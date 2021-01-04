@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Swipe
+public enum UserInput
 {
     None,
+    Tap,
     Up,
     Down,
     Left,
@@ -14,7 +15,7 @@ public enum Swipe
 
 public class InputManager : Singleton<InputManager>
 {
-    public Swipe CurrentSwipe = Swipe.None;
+    private UserInput _currentInput = UserInput.None;
 
     [SerializeField] private float _swipeResist = 70f;
     private float _swipeAngle = 0f;
@@ -44,9 +45,9 @@ public class InputManager : Singleton<InputManager>
         {
             float touchDiff = Vector2.Distance(_finalTouchPosition, _firstTouchPosition);
             if (touchDiff >= _swipeResist)
-            {
                 CalculateAngle();
-            }
+            else
+                EventManager.OnSwipeFail.Invoke();
         }
     }
 
@@ -54,6 +55,7 @@ public class InputManager : Singleton<InputManager>
     {
         _swipeAngle = Mathf.Atan2(_finalTouchPosition.y - _firstTouchPosition.y, _finalTouchPosition.x - _firstTouchPosition.x) * 180 / Mathf.PI;
         SwipeDir();
+        EventManager.OnSwipeDetected.Invoke(_currentInput);
     }
 
     private bool GetMouseInput()
@@ -61,7 +63,7 @@ public class InputManager : Singleton<InputManager>
         // Swipe/Click started
         if (Input.GetMouseButtonDown(0))
         {
-            CurrentSwipe = Swipe.None;
+            _currentInput = UserInput.None;
             _firstTouchPosition = (Vector2)Input.mousePosition;
         }
         else if (Input.GetMouseButtonUp(0))
@@ -79,26 +81,22 @@ public class InputManager : Singleton<InputManager>
         if (_swipeAngle > -45 && _swipeAngle <= 45)
         {
             //Right Swipe
-            CurrentSwipe = Swipe.Right;
-            Debug.Log("Sağ");
+            _currentInput = UserInput.Right;
         }
         else if (_swipeAngle > 45 && _swipeAngle <= 135)
         {
             //Up Swipe
-            Debug.Log("Üst");
-            CurrentSwipe = Swipe.Up;
+            _currentInput = UserInput.Up;
         }
         else if (_swipeAngle > 135 || _swipeAngle <= -135)
         {
             //Left Swipe
-            Debug.Log("Sol");
-            CurrentSwipe = Swipe.Left;
+            _currentInput = UserInput.Left;
         }
         else if (_swipeAngle <= -45 && _swipeAngle > -135)
         {
             //Down Swipe
-            Debug.Log("Aşağı");
-            CurrentSwipe = Swipe.Down;
+            _currentInput = UserInput.Down;
         }
     }
 }

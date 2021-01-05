@@ -15,20 +15,22 @@ public enum DoorDir
 public class MoveableDoor : DoorBase, IMoveable
 {
     private DoorDir _doorDir;
+    private bool _doorOpened;
 
     private void OnEnable()
     {
-        _doorDir = (DoorDir)UnityEngine.Random.Range(0, Enum.GetNames(typeof(DoorDir)).Length);
-        Transform doorPivot = transform.GetChild(0);
-        transform.DetachChildren();
-        doorPivot.position = PivotVector3();
-        transform.SetParent(doorPivot);
+        InitiateDoorPivot();
+        _doorOpened = false;
     }
 
+    
     public void Move(UserInput userInput)
     {
+        if (_doorOpened)
+            return;
         if (userInput.ToString() == _doorDir.ToString())
         {
+            _doorOpened = true;
             if (_doorDir == DoorDir.Down || _doorDir == DoorDir.Up)
             {
                 transform.parent.DOScaleY(0f, 2f);
@@ -39,17 +41,32 @@ public class MoveableDoor : DoorBase, IMoveable
             }
         }
         //Debug.LogFormat("UserInput: {0}, DoorDir: {1}", userInput.ToString(), _doorDir.ToString());
-
     }
 
-    protected override void Animation()
+    public override IEnumerator AIInputSelection(AIController AIController)
     {
-        throw new System.NotImplementedException();
+        while (!_doorOpened)
+        {
+            yield return new WaitForSeconds(AIController.AIInputTimeDelay);
+            UserInput AIInput = AIController.RandomAIInput();
+            Move(AIInput);
+            Debug.LogFormat("AIInput: {0}, DoorDir: {1}", AIInput.ToString(), _doorDir.ToString());
+        }
+        AIController.usedInput.Clear();
     }
 
-    public override void InputSelection()
+    public override void PlayerInputSelection()
     {
         EventManager.OnSwipeDetected.AddListener(Move);
+    }
+
+    private void InitiateDoorPivot()
+    {
+        _doorDir = (DoorDir)UnityEngine.Random.Range(0, Enum.GetNames(typeof(DoorDir)).Length);
+        Transform doorPivot = transform.GetChild(0);
+        transform.DetachChildren();
+        doorPivot.position = PivotVector3();
+        transform.SetParent(doorPivot);
     }
 
     private Vector3 PivotVector3()
@@ -74,4 +91,14 @@ public class MoveableDoor : DoorBase, IMoveable
         }
         return tempVec3;
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<Character>() == null)
+            return;
+
+        EventManager.OnSwipeDetected.RemoveListener(Move);
+        other.GetComponent<CharacterController>().IsRunning = true;
+    }
+
 }

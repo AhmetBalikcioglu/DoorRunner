@@ -9,12 +9,12 @@ public class BrakeableDoor : DoorBase, IBreakeable
         throw new System.NotImplementedException();
     }
 
-    protected override void Animation()
+    public override IEnumerator AIInputSelection(AIController AIInput)
     {
         throw new System.NotImplementedException();
     }
 
-    public override void InputSelection()
+    public override void PlayerInputSelection()
     {
         throw new System.NotImplementedException();
     }

@@ -4,6 +4,6 @@ using UnityEngine;
 
 public abstract class DoorBase : MonoBehaviour
 {
-    public abstract void InputSelection();
-    protected abstract void Animation();
+    public abstract void PlayerInputSelection();
+    public abstract IEnumerator AIInputSelection(AIController AIInput);
 }

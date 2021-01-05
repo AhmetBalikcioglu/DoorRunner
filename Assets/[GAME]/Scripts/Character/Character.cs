@@ -18,6 +18,8 @@ public class Character : MonoBehaviour
     private bool isControlable;
     public bool IsControlable { get { return isControlable; } set { isControlable = value; } }
 
+
+
     private void OnEnable()
     {
         if (Managers.Instance == null)
@@ -32,6 +34,7 @@ public class Character : MonoBehaviour
             return;
 
         CharacterManager.Instance.RemoveCharacter(this);
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,9 +42,17 @@ public class Character : MonoBehaviour
         DoorBase door = other.GetComponent<DoorBase>();
         if (door != null)
         {
+            GetComponent<CharacterController>().Stay();
             IsControlable = true;
-            door.InputSelection();
+            if (CharacterControllerType == CharacterControllerType.Player)
+                door.PlayerInputSelection();
+            else
+            {
+                Debug.Log(other.name + " AI Collide");
+                StartCoroutine(door.AIInputSelection(GetComponent<AIController>()));
+            }
             //Animation Trigger
         }
     }
+
 }

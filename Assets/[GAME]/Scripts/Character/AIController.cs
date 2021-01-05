@@ -8,10 +8,15 @@ public class AIController : MonoBehaviour
     public List<int> usedInput;
     public UserInput RandomAIInput()
     {
-        int randomInput = Random.Range(2, 5);
-        while (usedInput.Contains(randomInput))
-            randomInput = Random.Range(2, 5);
-        usedInput.Add(randomInput);
+        int randomInput = Random.Range(2, 6);
+        int maxIter = 0;
+        while (usedInput.Contains(randomInput) && maxIter <= 10)
+        {
+            randomInput = Random.Range(2, 6);
+            maxIter++;
+        }
+        if(!usedInput.Contains(randomInput))
+            usedInput.Add(randomInput);
         return (UserInput)randomInput;
     }
 }

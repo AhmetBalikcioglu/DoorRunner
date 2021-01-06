@@ -39,4 +39,6 @@ public class CharacterController : MonoBehaviour, ICharacterController
     {
         IsRunning = false;
     }
+    
+    
 }

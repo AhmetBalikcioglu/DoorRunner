@@ -39,6 +39,14 @@ public class InputManager : Singleton<InputManager>
         SwipeInput();
     }
 
+    private void FixedUpdate()
+    {
+        /*Vector3 input = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+
+        Vector3 newMove = input * 200f * Time.fixedDeltaTime;
+        CharacterManager.Instance.Player.Rigidbody.velocity = newMove;*/
+    }
+
     private void SwipeInput()
     {
         if (GetMouseInput())

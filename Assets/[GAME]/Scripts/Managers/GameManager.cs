@@ -11,10 +11,9 @@ public class GameManager : Singleton<GameManager>
     {
         if (isGameStarted)
             return;
-
-        isGameStarted = true;
         
         EventManager.OnGameStart.Invoke();
+        isGameStarted = true;
 
     }
 

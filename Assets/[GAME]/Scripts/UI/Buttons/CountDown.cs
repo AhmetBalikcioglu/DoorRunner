@@ -13,7 +13,7 @@ public class CountDown : MonoBehaviour
         if (Managers.Instance == null)
             return;
         
-        EventManager.OnLevelStart.AddListener(DownCounter);
+        EventManager.OnGameStart.AddListener(DownCounter);
     }
 
     private void OnDisable()
@@ -21,7 +21,7 @@ public class CountDown : MonoBehaviour
         if (Managers.Instance == null)
             return;
         
-        EventManager.OnLevelStart.RemoveListener(DownCounter);
+        EventManager.OnGameStart.RemoveListener(DownCounter);
     }
     
     void DownCounter()
@@ -38,8 +38,10 @@ public class CountDown : MonoBehaviour
         yield return new WaitForSeconds(1f);
         
         _counter.text = "GO";
-        yield return new WaitForSeconds(1f);
-
+        EventManager.OnLevelStart.Invoke();
+        
+        yield return new WaitForSeconds(0.6f);
         _counter.text = "";
+        
     }
 }

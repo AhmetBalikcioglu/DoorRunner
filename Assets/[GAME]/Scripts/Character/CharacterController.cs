@@ -32,6 +32,9 @@ public class CharacterController : MonoBehaviour, ICharacterController
 
     public void Run()
     {
+        if (!GameManager.Instance.isGameStarted)
+            return;
+        
         transform.position += Vector3.forward * _moveSpeed * Time.deltaTime;
     }
 
@@ -39,4 +42,6 @@ public class CharacterController : MonoBehaviour, ICharacterController
     {
         IsRunning = false;
     }
+    
+    
 }

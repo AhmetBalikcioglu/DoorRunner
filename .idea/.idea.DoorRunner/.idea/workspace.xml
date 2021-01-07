@@ -23,11 +23,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b094d7da-ab47-4791-b6e8-0ac49399aeab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/FailFall.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/FailFall.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Animations/Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Animations/Idle.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/PlayerAnimations.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Animations/PlayerAnimations.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/Running.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Animations/Running.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/WonDance.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Animations/WonDance.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/WonDance.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Animations/WonDance.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/fatguy.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/fatguy.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/fatguy@FailFall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/fatguy@FailFall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/fatguy@Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/fatguy@Idle.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/fatguy@WonDance.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/fatguy@WonDance.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/CharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/CountDown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/CountDown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/CharacterManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +72,11 @@
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/CharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/CountDown.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/CharacterAnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/CharacterManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" />
       </list>
     </option>
   </component>
@@ -105,7 +125,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609954639478</updated>
-      <workItem from="1609954655735" duration="8907000" />
+      <workItem from="1609954655735" duration="9509000" />
+      <workItem from="1610046488139" duration="1329000" />
     </task>
     <servers />
   </component>
@@ -124,6 +145,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -133,9 +155,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="941" y="253" width="678" height="534" key="find.popup/2560.0.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1609962278270" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609962672922">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610046950080">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/2560.0.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1609962672922" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/2560.0.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1610046950080" />
   </component>
 </project>

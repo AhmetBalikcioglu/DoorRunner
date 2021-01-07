@@ -99,6 +99,8 @@ public class MoveableDoor : DoorBase, IMoveable
 
         EventManager.OnSwipeDetected.RemoveListener(Move);
         other.GetComponent<CharacterController>().IsRunning = true;
+        
+        
     }
 
 }

@@ -68,7 +68,11 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - e6625f31ef2383e4e92466ca25bdf432
+  - 2a4827c4ab8266443bd3fc35bdab0d1a
+  - 6b9e3c974f0a47f46a7476d574c6e331
+  - cbab62839a6a638439f356aca1ccaccc
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -81,7 +85,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.015
+    globalScale: 1.5
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

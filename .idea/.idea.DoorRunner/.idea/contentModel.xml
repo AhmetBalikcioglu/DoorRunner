@@ -12,6 +12,7 @@
             <e p="Character" t="Include">
               <e p="AIController.cs" t="Include" />
               <e p="Character.cs" t="Include" />
+              <e p="CharacterAnimationController.cs" t="Include" />
               <e p="CharacterController.cs" t="Include" />
               <e p="ICharacterController.cs" t="Include" />
             </e>

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -42,6 +43,11 @@ public class Character : MonoBehaviour
         DoorBase door = other.GetComponent<DoorBase>();
         if (door != null)
         {
+            var controller = GetComponent<CharacterAnimationController>();
+            if (controller != null)
+            {
+                controller.InvokeTrigger("Idle");
+            }
             GetComponent<CharacterController>().Stay();
             IsControlable = true;
             if (CharacterControllerType == CharacterControllerType.Player)
@@ -55,4 +61,15 @@ public class Character : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<DoorBase>() != null)
+        {
+            var controller = GetComponent<CharacterAnimationController>();
+            if (controller != null)
+            {
+                controller.InvokeTrigger("Run");
+            }
+        }
+    }
 }

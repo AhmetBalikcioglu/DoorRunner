@@ -23,7 +23,6 @@ public class MoveableDoor : DoorBase, IMoveable
         _doorOpened = false;
     }
 
-    
     public void Move(UserInput userInput)
     {
         if (_doorOpened)
@@ -99,8 +98,6 @@ public class MoveableDoor : DoorBase, IMoveable
 
         EventManager.OnSwipeDetected.RemoveListener(Move);
         other.GetComponent<CharacterController>().IsRunning = true;
-        
-        
     }
 
 }

@@ -12,8 +12,6 @@ public class TapToStart : Button
     {
         base.OnEnable();
         onClick.AddListener(StartGame);
-        
-        
     }
 
     protected override void OnDisable()
@@ -24,9 +22,7 @@ public class TapToStart : Button
 
     private void StartGame()
     {
-        
         GameManager.Instance.StartGame();
-        
     }
 
     

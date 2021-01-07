@@ -17,9 +17,8 @@ public class CharacterAnimationController : MonoBehaviour
             return;
 
         EventManager.OnLevelStart.AddListener(() => InvokeTrigger("Run"));
-        EventManager.OnLevelFinish.AddListener(() => Animator.Rebind());
-        
-
+        //EventManager.OnLevelFinish.AddListener(() => Animator.Rebind());
+        EventManager.OnLevelFinish.AddListener(GameEnd);
     }
 
     private void OnDisable()
@@ -28,12 +27,22 @@ public class CharacterAnimationController : MonoBehaviour
             return;
         
         EventManager.OnLevelStart.RemoveListener(() => InvokeTrigger("Run"));
-        EventManager.OnLevelFinish.RemoveListener(() => Animator.Rebind());
+        //EventManager.OnLevelFinish.RemoveListener(() => Animator.Rebind());
+        EventManager.OnLevelFinish.RemoveListener(GameEnd);
+
     }
 
     public void InvokeTrigger(string value)
     {
         Animator.SetTrigger(value);
+    }
+
+    public void GameEnd()
+    {
+        if (Character.Won)
+            InvokeTrigger("Dance");
+        else
+            InvokeTrigger("Fall");
     }
 
 }

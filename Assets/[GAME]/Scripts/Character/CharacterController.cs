@@ -13,14 +13,16 @@ public class CharacterController : MonoBehaviour, ICharacterController
         if (Managers.Instance == null)
             return;
         EventManager.OnLevelStart.AddListener(() => IsRunning = true);
-
+        EventManager.OnLevelFinish.AddListener(() => IsRunning = false);
     }
+
     private void OnDisable()
     {
         if (Managers.Instance == null)
             return;
 
         EventManager.OnLevelStart.RemoveListener(() => IsRunning = true);
+        EventManager.OnLevelFinish.RemoveListener(() => IsRunning = false);
     }
 
     private void Update()

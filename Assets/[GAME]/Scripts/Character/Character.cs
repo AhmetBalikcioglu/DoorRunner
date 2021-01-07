@@ -19,7 +19,8 @@ public class Character : MonoBehaviour
     private bool isControlable;
     public bool IsControlable { get { return isControlable; } set { isControlable = value; } }
 
-
+    private bool _won;
+    public bool Won { get { return _won; } set { _won = value; } }
 
     private void OnEnable()
     {

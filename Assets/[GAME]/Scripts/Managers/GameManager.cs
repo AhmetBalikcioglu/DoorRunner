@@ -31,4 +31,13 @@ public class GameManager : Singleton<GameManager>
 
     }
 
+    public void GameEnd(Character champion)
+    {
+        foreach (var character in CharacterManager.Instance.Characters)
+            character.Won = false;
+        champion.Won = true;
+
+        EventManager.OnLevelFinish.Invoke();
+        isGameStarted = false;
+    }
 }

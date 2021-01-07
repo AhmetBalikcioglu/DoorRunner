@@ -16,6 +16,8 @@ public class ObstacleManager : Singleton<ObstacleManager>
     [Header("Lane Related")]
     [SerializeField] private List<Transform> _lanes;
 
+    public Vector3 lastObstaclePosition;
+
     private void OnEnable()
     {
         if (Managers.Instance == null)
@@ -39,5 +41,8 @@ public class ObstacleManager : Singleton<ObstacleManager>
         }
         GameObject currentTrack = Instantiate(_track, _lanes[1].position, Quaternion.identity);
         currentTrack.transform.position += Vector3.forward * iteration * _trackLength - Vector3.forward * _trackZIteratation;
+
+        lastObstaclePosition = Vector3.forward * iteration * _trackLength + Vector3.forward * 0.5f;
     }
+
 }

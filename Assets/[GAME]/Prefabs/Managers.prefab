@@ -108,6 +108,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  lastObstaclePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &960285152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,3 +122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _courseLength: 10
+  _finishLine: {fileID: 5897394829835153047, guid: 548c4393ead07a6478b4380f7958c3fc,
+    type: 3}
+  _finishLineYIteration: 6

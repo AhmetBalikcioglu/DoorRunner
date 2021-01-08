@@ -60,6 +60,11 @@ public class CharacterManager : Singleton<CharacterManager>
     {
         if (!Characters.Contains(character))
             Characters.Add(character);
+
+        if (character.CharacterControllerType == CharacterControllerType.AI)
+        {
+            character.gameObject.AddComponent<AIController>();
+        }
     }
 
     public void RemoveCharacter(Character character)

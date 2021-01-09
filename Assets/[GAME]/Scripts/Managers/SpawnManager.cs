@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ public class SpawnManager : Singleton<SpawnManager>
     {
         if (Managers.Instance == null)
             return;
-
+        
         EventManager.OnSceneLoad.AddListener(SpawnCourse);
     }
 
@@ -25,6 +26,11 @@ public class SpawnManager : Singleton<SpawnManager>
         EventManager.OnSceneLoad.RemoveListener(SpawnCourse);
     }
 
+    private void Start()
+    {
+        EventManager.OnSceneLoad.Invoke();
+    }
+    
     private void SpawnCourse()
     {
         for (int i = 0; i < _courseLength; i++)

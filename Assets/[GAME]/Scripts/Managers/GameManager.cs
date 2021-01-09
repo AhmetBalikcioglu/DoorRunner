@@ -12,7 +12,6 @@ public class GameManager : Singleton<GameManager>
         if (Managers.Instance == null)
             return;
 
-        EventManager.OnSceneLoad.Invoke();
     }
 
     private void OnDisable()

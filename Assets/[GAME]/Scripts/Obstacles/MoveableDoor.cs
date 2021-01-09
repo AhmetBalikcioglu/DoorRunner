@@ -74,16 +74,16 @@ public class MoveableDoor : DoorBase, IMoveable
         switch (_doorDir)
         {
             case DoorDir.Up:
-                tempVec3 = transform.position + Vector3.up;
+                tempVec3 = transform.localPosition + Vector3.up;
                 break;
             case DoorDir.Down:
-                tempVec3 = transform.position + Vector3.down;
+                tempVec3 = transform.localPosition + Vector3.down;
                 break;
             case DoorDir.Left:
-                tempVec3 = transform.position + Vector3.left;
+                tempVec3 = transform.localPosition + Vector3.left;
                 break;
             case DoorDir.Right:
-                tempVec3 = transform.position + Vector3.right;
+                tempVec3 = transform.localPosition + Vector3.right;
                 break;
             default:
                 break;

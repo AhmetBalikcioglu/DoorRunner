@@ -22,6 +22,7 @@ public class ObstacleManager : Singleton<ObstacleManager>
     {
         if (Managers.Instance == null)
             return;
+        
     }
 
     private void OnDisable()

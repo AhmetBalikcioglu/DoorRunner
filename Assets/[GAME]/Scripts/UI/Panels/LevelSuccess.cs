@@ -11,7 +11,7 @@ public class LevelSuccess : Panel
             return;
         
         EventManager.OnLevelSuccess.AddListener(ShowPanel);
-        EventManager.OnGameStart.AddListener(HidePanel);
+        EventManager.OnSceneLoad.AddListener(HidePanel);
         
     }
 
@@ -21,6 +21,6 @@ public class LevelSuccess : Panel
             return;
         
         EventManager.OnLevelSuccess.RemoveListener(ShowPanel);
-        EventManager.OnGameStart.RemoveListener(HidePanel);
+        EventManager.OnSceneLoad.RemoveListener(HidePanel);
     }
 }

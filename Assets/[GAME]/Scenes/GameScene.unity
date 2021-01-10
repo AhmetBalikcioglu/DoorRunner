@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 126708af57112a948ae2e1286abfec31,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -1043,7 +1044,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1747,6 +1748,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1495964725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8132621389846166575, guid: 5079cda003244e54cb6aa8620edd8ce9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8132621390537487861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1495964726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495964725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa070db7ad54394d8e113301f709454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ambiances:
+  - {fileID: 11400000, guid: cadbdf06d401fa045a6508f92343ad71, type: 2}
+  - {fileID: 11400000, guid: fdce51cdc7354374795b46e2ec64795e, type: 2}
+  - {fileID: 11400000, guid: 3c6e1220c30390f49892d312e1c6b5e1, type: 2}
+  chosenAmbiance: {fileID: 0}
+  _trackMat:
+  - {fileID: 2100000, guid: c9607e8628976444296c9d61313d85a1, type: 2}
+  - {fileID: 2100000, guid: 0845f5b16533c3a4db50828eb72a54a8, type: 2}
+  _doorMat: {fileID: 2100000, guid: 2aea88fc78b75404cb4a391b6b003215, type: 2}
 --- !u!4 &1509866554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3450118439137040515, guid: 5d09e205b8901a942afd9876972f9f07,
@@ -2207,7 +2235,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
       propertyPath: _courseLength
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5970155440234258610, guid: 5079cda003244e54cb6aa8620edd8ce9,
         type: 3}

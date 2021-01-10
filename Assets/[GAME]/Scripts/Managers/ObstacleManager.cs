@@ -41,6 +41,7 @@ public class ObstacleManager : Singleton<ObstacleManager>
             randomDoor = Random.Range(0, _doorPrefabs.Count);
         }
         GameObject currentTrack = Instantiate(_track, _lanes[1].position, Quaternion.identity);
+        currentTrack.GetComponent<Renderer>().material = AmbianceManager.Instance.ChangeTrackColor();
         currentTrack.transform.position += Vector3.forward * iteration * _trackLength - Vector3.forward * _trackZIteratation;
 
         lastObstaclePosition = Vector3.forward * iteration * _trackLength + Vector3.forward * 0.5f;

@@ -21,8 +21,9 @@ public class MoveableDoor : DoorBase, IMoveable
     {
         InitiateDoorPivot();
         _doorOpened = false;
-    }
 
+    }
+   
     public void Move(UserInput userInput)
     {
         if (_doorOpened)
@@ -32,11 +33,11 @@ public class MoveableDoor : DoorBase, IMoveable
             _doorOpened = true;
             if (_doorDir == DoorDir.Down || _doorDir == DoorDir.Up)
             {
-                transform.parent.DOScaleY(0f, 2f);
+                transform.parent.DOScaleY(0f, 2f).OnComplete(() => Destroy(transform.parent.gameObject));
             }
             else if (_doorDir == DoorDir.Left || _doorDir == DoorDir.Right)
             {
-                transform.parent.DOScaleX(0f, 2f);
+                transform.parent.DOScaleX(0f, 2f).OnComplete(() => Destroy(transform.parent.gameObject));
             }
         }
         //Debug.LogFormat("UserInput: {0}, DoorDir: {1}", userInput.ToString(), _doorDir.ToString());
@@ -49,7 +50,7 @@ public class MoveableDoor : DoorBase, IMoveable
             yield return new WaitForSeconds(AIController.AIInputTimeDelay);
             UserInput AIInput = AIController.RandomAIInput();
             Move(AIInput);
-            Debug.LogFormat("AIInput: {0}, DoorDir: {1}", AIInput.ToString(), _doorDir.ToString());
+            //Debug.LogFormat("AIInput: {0}, DoorDir: {1}", AIInput.ToString(), _doorDir.ToString());
         }
         AIController.usedInput.Clear();
     }
@@ -74,16 +75,16 @@ public class MoveableDoor : DoorBase, IMoveable
         switch (_doorDir)
         {
             case DoorDir.Up:
-                tempVec3 = transform.localPosition + Vector3.up;
+                tempVec3 = transform.position + 5f * Vector3.up / 2f;
                 break;
             case DoorDir.Down:
-                tempVec3 = transform.localPosition + Vector3.down;
+                tempVec3 = transform.position + Vector3.up / 2f;
                 break;
             case DoorDir.Left:
-                tempVec3 = transform.localPosition + Vector3.left;
+                tempVec3 = transform.position + Vector3.left;
                 break;
             case DoorDir.Right:
-                tempVec3 = transform.localPosition + Vector3.right;
+                tempVec3 = transform.position + Vector3.right;
                 break;
             default:
                 break;

@@ -9,7 +9,7 @@ public class InGame : Panel
     {
         if (Managers.Instance == null)
             return;
-        EventManager.OnLevelStart.AddListener(ShowPanel);
+        EventManager.OnGameStart.AddListener(ShowPanel);
         EventManager.OnLevelFinish.AddListener(HidePanel);
     }
 
@@ -18,7 +18,7 @@ public class InGame : Panel
         if (Managers.Instance == null)
             return;
         
-        EventManager.OnLevelStart.RemoveListener(ShowPanel);
+        EventManager.OnGameStart.RemoveListener(ShowPanel);
         EventManager.OnLevelFinish.RemoveListener(HidePanel);
         
     }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -12,12 +13,15 @@ public class GameManager : Singleton<GameManager>
         if (Managers.Instance == null)
             return;
 
+        EventManager.OnGameRestart.AddListener(GameRestart);
     }
 
     private void OnDisable()
     {
         if (Managers.Instance == null)
             return;
+
+        EventManager.OnGameRestart.RemoveListener(GameRestart);
     }
 
     public void StartGame()
@@ -38,5 +42,10 @@ public class GameManager : Singleton<GameManager>
 
         EventManager.OnLevelFinish.Invoke();
         isGameStarted = false;
+    }
+
+    private void GameRestart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

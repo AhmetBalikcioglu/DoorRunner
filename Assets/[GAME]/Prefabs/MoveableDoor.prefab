@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5144502492789730147}
   - component: {fileID: 5144502492789730151}
   m_Layer: 0
-  m_Name: Door
+  m_Name: MoveableDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5144502492789730144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2, y: 3, z: 0.25}
   m_Children:
   - {fileID: 5144502492867544704}
   m_Father: {fileID: 0}
@@ -93,8 +93,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 5}
-  m_Center: {x: 0, y: 0, z: -2}
+  m_Size: {x: 1, y: 1, z: 20}
+  m_Center: {x: 0, y: 0, z: -8}
 --- !u!114 &5144502492789730151
 MonoBehaviour:
   m_ObjectHideFlags: 0

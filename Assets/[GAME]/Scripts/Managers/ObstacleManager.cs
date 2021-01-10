@@ -6,6 +6,7 @@ public class ObstacleManager : Singleton<ObstacleManager>
 {
     [Header("Door Related")]
     [SerializeField] private List<GameObject> _doorPrefabs;
+    [SerializeField] private GameObject _doorFrame;
     [SerializeField] private float _doorYIteration;
 
     [Header("Track Related")]
@@ -38,6 +39,7 @@ public class ObstacleManager : Singleton<ObstacleManager>
         {
             GameObject currentDoor = Instantiate(_doorPrefabs[randomDoor], _lanes[i].position, Quaternion.identity);
             currentDoor.transform.position += Vector3.up * _doorYIteration + Vector3.forward * iteration * _trackLength;
+            Instantiate(_doorFrame, currentDoor.transform.position + (1.5f * Vector3.down), Quaternion.identity);
             randomDoor = Random.Range(0, _doorPrefabs.Count);
         }
         GameObject currentTrack = Instantiate(_track, _lanes[1].position, Quaternion.identity);

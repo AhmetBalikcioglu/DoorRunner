@@ -13,6 +13,10 @@ public class AmbianceManager : Singleton<AmbianceManager>
     [SerializeField] private Material _doorMat;
     private bool _trackChange;
 
+    [Header("BackgroundRelated")]
+    [SerializeField] private Gradient _background;
+
+
     private void OnEnable()
     {
         if (Managers.Instance == null)
@@ -33,7 +37,7 @@ public class AmbianceManager : Singleton<AmbianceManager>
     {
         int randomAmbiance = Random.Range(0, _ambiances.Count);
         chosenAmbiance = _ambiances[randomAmbiance];
-        Camera.main.backgroundColor = chosenAmbiance.cameraColor;
+        _background.SetColor(chosenAmbiance.cameraColorBottom, chosenAmbiance.cameraColorTop);
         _doorMat.color = chosenAmbiance.doorColor;
         _trackMat[0].color = chosenAmbiance.trackColor1;
         _trackMat[1].color = chosenAmbiance.trackColor2;

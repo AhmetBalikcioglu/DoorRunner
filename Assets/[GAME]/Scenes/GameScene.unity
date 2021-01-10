@@ -2444,6 +2444,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5144502492789730144, guid: 6fae662af50fff44c8a7be805f4f5fa3,
         type: 3}
+    - target: {fileID: 5970155440234258610, guid: 5079cda003244e54cb6aa8620edd8ce9,
+        type: 3}
+      propertyPath: _doorFrame
+      value: 
+      objectReference: {fileID: 3422799546193350456, guid: a532f790e1dc7c04d97c45b43fa06070,
+        type: 3}
     - target: {fileID: 8132621389846166568, guid: 5079cda003244e54cb6aa8620edd8ce9,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -6,7 +6,8 @@ using UnityEngine;
 public class AmbianceScriptableBase : ScriptableObject
 {
     [Header("CameraRelated")]
-    public Color cameraColor;
+    public Color cameraColorTop;
+    public Color cameraColorBottom;
 
     [Header("TrackRelated")]
     public Color trackColor1;

@@ -41,8 +41,21 @@ public class CharacterAnimationController : MonoBehaviour
     {
         if (Character.Won)
             InvokeTrigger("Dance");
+        
         else
             InvokeTrigger("Fall");
+
+        if (Character.CharacterControllerType == CharacterControllerType.Player )
+        {
+            if (Character.Won)
+            {
+                EventManager.OnLevelSuccess.Invoke();
+            }
+            else
+            {
+                EventManager.OnLevelFail.Invoke();
+            }
+        }
     }
 
 }

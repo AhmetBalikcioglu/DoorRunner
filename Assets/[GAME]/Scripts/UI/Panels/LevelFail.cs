@@ -10,7 +10,7 @@ public class LevelFail : Panel
         if (Managers.Instance == null)
             return;
         
-        EventManager.OnGameStart.AddListener(HidePanel);
+        EventManager.OnSceneLoad.AddListener(HidePanel);
         EventManager.OnLevelFail.AddListener(ShowPanel);
     }
 
@@ -19,7 +19,7 @@ public class LevelFail : Panel
         if (Managers.Instance == null)
             return;
         
-        EventManager.OnGameStart.RemoveListener(HidePanel);
+        EventManager.OnSceneLoad.RemoveListener(HidePanel);
         EventManager.OnLevelFail.RemoveListener(ShowPanel);
     }
 }

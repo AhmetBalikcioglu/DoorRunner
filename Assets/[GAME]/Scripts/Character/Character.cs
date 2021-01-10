@@ -28,6 +28,7 @@ public class Character : MonoBehaviour
             return;
 
         CharacterManager.Instance.AddCharacter(this);
+        EventManager.OnLevelFinish.AddListener(() => StopAllCoroutines());
     }
 
     private void OnDisable()
@@ -36,7 +37,7 @@ public class Character : MonoBehaviour
             return;
 
         CharacterManager.Instance.RemoveCharacter(this);
-
+        EventManager.OnLevelFinish.RemoveListener(() => StopAllCoroutines());
     }
 
     private void OnTriggerEnter(Collider other)
@@ -55,7 +56,6 @@ public class Character : MonoBehaviour
                 door.PlayerInputSelection();
             else
             {
-                Debug.Log(other.name + " AI Collide");
                 StartCoroutine(door.AIInputSelection(GetComponent<AIController>()));
             }
             //Animation Trigger

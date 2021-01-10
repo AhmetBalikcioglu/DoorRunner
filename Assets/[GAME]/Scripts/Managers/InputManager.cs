@@ -63,7 +63,7 @@ public class InputManager : Singleton<InputManager>
     {
         _swipeAngle = Mathf.Atan2(_finalTouchPosition.y - _firstTouchPosition.y, _finalTouchPosition.x - _firstTouchPosition.x) * 180 / Mathf.PI;
         SwipeDir();
-        EventManager.OnSwipeDetected.Invoke(_currentInput);
+        EventManager.OnSwipeDetected.Invoke(_currentInput, true);
     }
 
     private bool GetMouseInput()

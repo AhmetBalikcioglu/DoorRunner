@@ -28,4 +28,4 @@ public static class EventManager
 
 }
 
-public class InputEvent : UnityEvent<UserInput> { }
+public class InputEvent : UnityEvent<UserInput, bool> { }

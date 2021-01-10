@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IMoveable
 {
-    void Move(UserInput userInput);
+    void Move(UserInput userInput, bool isPlayer);
 }

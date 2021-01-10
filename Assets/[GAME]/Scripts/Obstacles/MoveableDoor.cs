@@ -24,12 +24,14 @@ public class MoveableDoor : DoorBase, IMoveable
 
     }
    
-    public void Move(UserInput userInput)
+    public void Move(UserInput userInput, bool isPlayer)
     {
         if (_doorOpened)
             return;
         if (userInput.ToString() == _doorDir.ToString())
         {
+            if (isPlayer)
+                AudioManager.Instance.Play("CorrectSwipe");
             _doorOpened = true;
             if (_doorDir == DoorDir.Down || _doorDir == DoorDir.Up)
             {
@@ -40,6 +42,10 @@ public class MoveableDoor : DoorBase, IMoveable
                 transform.parent.DOScaleX(0f, 2f).OnComplete(() => Destroy(transform.parent.gameObject));
             }
         }
+        else if(isPlayer)
+            AudioManager.Instance.Play("WrongSwipe");
+
+
         //Debug.LogFormat("UserInput: {0}, DoorDir: {1}", userInput.ToString(), _doorDir.ToString());
     }
 
@@ -49,7 +55,7 @@ public class MoveableDoor : DoorBase, IMoveable
         {
             yield return new WaitForSeconds(AIController.AIInputTimeDelay);
             UserInput AIInput = AIController.RandomAIInput();
-            Move(AIInput);
+            Move(AIInput, false);
             //Debug.LogFormat("AIInput: {0}, DoorDir: {1}", AIInput.ToString(), _doorDir.ToString());
         }
         AIController.usedInput.Clear();

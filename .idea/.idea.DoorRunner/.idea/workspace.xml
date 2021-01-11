@@ -25,15 +25,14 @@
     <list default="true" id="b094d7da-ab47-4791-b6e8-0ac49399aeab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Flags.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Flags.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/DoorMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/DoorMat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/AI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/AI.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAndNickname.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAndNickname.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/NicknameText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/NicknameText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance3.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +43,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/DoorBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/NicknameText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/PlayAgainButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A979F18D-51AF-4117-9D12-B797E8C5BE14/9d/6cf7328f/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FinishLine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/ObstacleManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/CountDown.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/TapToStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Panels/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAssigner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,6 +69,7 @@
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/ButtonAppend.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FinishLine.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/EventManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/CharacterAnimationController.cs" />
@@ -83,11 +80,6 @@
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/ObstacleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAndNickname.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/AssignNickToPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FinishLine.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/NicknameText.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAssigner.cs" />
       </list>
     </option>
   </component>
@@ -100,10 +92,7 @@
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -118,19 +107,22 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b094d7da-ab47-4791-b6e8-0ac49399aeab" name="Default Changelist" comment="" />
@@ -140,13 +132,12 @@
       <updated>1609954639478</updated>
       <workItem from="1609954655735" duration="9509000" />
       <workItem from="1610046488139" duration="1329000" />
-      <workItem from="1610370878945" duration="7974000" />
-      <workItem from="1610379172240" duration="5878000" />
+      <workItem from="1610393646200" duration="1201000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
@@ -155,13 +146,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

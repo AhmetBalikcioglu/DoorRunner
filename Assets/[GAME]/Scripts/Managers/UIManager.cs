@@ -8,18 +8,11 @@ public class UIManager : Singleton<UIManager>
     {
         if (Managers.Instance == null)
             return;
-        EventManager.OnLevelFinish.AddListener(LevelFinish);
-
     }
 
     private void OnDisable()
     {
         if (Managers.Instance == null)
             return;
-    }
-
-    private void LevelFinish()
-    {
-        
     }
 }

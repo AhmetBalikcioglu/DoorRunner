@@ -12,7 +12,5 @@ public class FinishLine : MonoBehaviour
         Character champion = other.GetComponent<Character>();
         if (champion != null)
             GameManager.Instance.GameEnd(champion);
-
-        
     }
 }

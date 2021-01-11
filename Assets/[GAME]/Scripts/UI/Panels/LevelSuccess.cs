@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class LevelSuccess : Panel
 {
@@ -12,7 +13,6 @@ public class LevelSuccess : Panel
         
         EventManager.OnLevelSuccess.AddListener(ShowPanel);
         EventManager.OnSceneLoad.AddListener(HidePanel);
-        
     }
 
     private void OnDisable()

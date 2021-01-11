@@ -3,19 +3,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using UnityEngine.UI;
+using TMPro;
+
 
 public class NicknameText : MonoBehaviour
 {
+    //[SerializeField] private TextMeshPro _nickText;
+    private int _randomTextSelector;
+    List<String> _nickNames = new List<String>();
     
-    private void Start()
+    private void OnEnable()
     {
-        ReadTextAndFillArray();
+        if (Managers.Instance == null)
+            return;
+        
+        EventManager.OnSceneLoad.AddListener(AssignToPlayer);
     }
 
-    static void ReadTextAndFillArray()
+    private void OnDisable()
     {
-        //List<String> _nickNames = new List<String>();
+        if (Managers.Instance == null)
+            return;
+        
+        EventManager.OnSceneLoad.RemoveListener(AssignToPlayer);
+    }
+
+    private void Awake()
+    {
+        ReadText();
+    }
+
+    public void AssignToPlayer()
+    {
+        _randomTextSelector = UnityEngine.Random.Range(0, ReadText().Count - 1);
+        List<String> _nicks = ReadText();
+        GetComponent<TextMeshProUGUI>().text = _nicks[_randomTextSelector];
+    }
+    public List<String> ReadText()
+    {
+        
         
         string fileName = "nicknames.txt";
         var sr = new StreamReader(Application.dataPath + "/" + fileName);
@@ -27,9 +53,11 @@ public class NicknameText : MonoBehaviour
 
         foreach (var line in lines)
         {
-            //_nickNames.Add(line);
-            Debug.Log(line);
+            _nickNames.Add(line);
+            //Debug.Log(line);
         }
+
+        return _nickNames;
     }
 
 }

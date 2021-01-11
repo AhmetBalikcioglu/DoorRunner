@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FlagAndNickname : MonoBehaviour
+public class FlagAssigner : MonoBehaviour
 { 
     public List<Sprite> FlagImages;
     private int _randomFlagSelector;

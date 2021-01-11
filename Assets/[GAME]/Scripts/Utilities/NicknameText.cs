@@ -8,7 +8,6 @@ using TMPro;
 
 public class NicknameText : MonoBehaviour
 {
-    //[SerializeField] private TextMeshPro _nickText;
     private int _randomTextSelector;
     List<String> _nickNames = new List<String>();
     
@@ -35,14 +34,13 @@ public class NicknameText : MonoBehaviour
 
     public void AssignToPlayer()
     {
-        _randomTextSelector = UnityEngine.Random.Range(0, ReadText().Count - 1);
         List<String> _nicks = ReadText();
+        _randomTextSelector = UnityEngine.Random.Range(0, _nicks.Count);
         GetComponent<TextMeshProUGUI>().text = _nicks[_randomTextSelector];
     }
+    
     public List<String> ReadText()
     {
-        
-        
         string fileName = "nicknames.txt";
         var sr = new StreamReader(Application.dataPath + "/" + fileName);
         
@@ -56,7 +54,6 @@ public class NicknameText : MonoBehaviour
             _nickNames.Add(line);
             //Debug.Log(line);
         }
-
         return _nickNames;
     }
 

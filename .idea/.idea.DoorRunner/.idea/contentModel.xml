@@ -56,7 +56,7 @@
             <e p="Utilities" t="Include">
               <e p="AmbianceScriptableBase.cs" t="Include" />
               <e p="FinishLine.cs" t="Include" />
-              <e p="FlagAndNickname.cs" t="Include" />
+              <e p="FlagAssigner.cs" t="Include" />
               <e p="Gradient.cs" t="Include" />
               <e p="NicknameText.cs" t="Include" />
               <e p="Singleton.cs" t="Include" />

@@ -52,9 +52,11 @@
                 <e p="MainMenu.cs" t="Include" />
                 <e p="Panel.cs" t="Include" />
               </e>
+              <e p="ProgressBar.cs" t="Include" />
             </e>
             <e p="Utilities" t="Include">
               <e p="AmbianceScriptableBase.cs" t="Include" />
+              <e p="CameraController.cs" t="Include" />
               <e p="FinishLine.cs" t="Include" />
               <e p="FlagAssigner.cs" t="Include" />
               <e p="Gradient.cs" t="Include" />

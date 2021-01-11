@@ -28,12 +28,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/DoorMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/DoorMat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/AI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/AI.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAndNickname.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAndNickname.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/NicknameText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/NicknameText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +40,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/ProgressBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FinishLine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/DoorBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/NicknameText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Panels/LevelSuccess.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FinishLine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Panels/InGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/ObstacleManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAssigner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,7 +79,6 @@
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Panels/GameOver.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Panels/LevelSuccess.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Panels/LevelFail.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/ObstacleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAndNickname.cs" />
@@ -88,6 +86,8 @@
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FinishLine.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/NicknameText.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FlagAssigner.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/ProgressBar.cs" />
       </list>
     </option>
   </component>

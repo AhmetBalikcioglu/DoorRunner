@@ -9,6 +9,10 @@ public class SpawnManager : Singleton<SpawnManager>
 
     [Header("Finish Related")]
     [SerializeField] private GameObject _finishLine;
+    public GameObject[] _targetPositions;
+
+    public Vector3 finisLinePosition;
+    
     [SerializeField] private float _finishLineYIteration;
 
     private void OnEnable()
@@ -37,7 +41,11 @@ public class SpawnManager : Singleton<SpawnManager>
         {
             ObstacleManager.Instance.SpawnObstacles(i);
         }
-        Instantiate(_finishLine, ObstacleManager.Instance.lastObstaclePosition + Vector3.up * _finishLineYIteration, _finishLine.transform.rotation);
+
+        finisLinePosition = ObstacleManager.Instance.lastObstaclePosition + Vector3.up * _finishLineYIteration;
+        Instantiate(_finishLine, finisLinePosition, _finishLine.transform.rotation);
     }
+    
+    
 
 }

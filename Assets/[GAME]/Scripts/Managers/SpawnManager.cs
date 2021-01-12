@@ -13,7 +13,7 @@ public class SpawnManager : Singleton<SpawnManager>
 
     public Vector3 finisLinePosition;
     
-    [SerializeField] private float _finishLineYIteration;
+    //[SerializeField] private float _finishLineYIteration;
 
     private void OnEnable()
     {
@@ -42,7 +42,7 @@ public class SpawnManager : Singleton<SpawnManager>
             ObstacleManager.Instance.SpawnObstacles(i);
         }
 
-        finisLinePosition = ObstacleManager.Instance.lastObstaclePosition + Vector3.up * _finishLineYIteration;
+        finisLinePosition = ObstacleManager.Instance.lastObstaclePosition;
         Instantiate(_finishLine, finisLinePosition, _finishLine.transform.rotation);
     }
     

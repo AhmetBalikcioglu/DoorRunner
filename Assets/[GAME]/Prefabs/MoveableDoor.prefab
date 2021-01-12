@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5144502492789730149}
   - component: {fileID: 5144502492789730146}
   - component: {fileID: 5144502492789730147}
-  - component: {fileID: 5144502492789730151}
+  - component: {fileID: 1005754169907976215}
   m_Layer: 0
   m_Name: MoveableDoor
   m_TagString: Untagged
@@ -95,7 +95,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 20}
   m_Center: {x: 0, y: 0, z: -8}
---- !u!114 &5144502492789730151
+--- !u!114 &1005754169907976215
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f4f44950ba8d74e88c383f7a29eab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  duration: 0.5
 --- !u!1 &5144502492867544705
 GameObject:
   m_ObjectHideFlags: 0

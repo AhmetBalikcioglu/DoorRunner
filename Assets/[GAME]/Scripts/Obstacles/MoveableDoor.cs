@@ -14,6 +14,7 @@ public enum DoorDir
 
 public class MoveableDoor : DoorBase, IMoveable
 {
+    public float duration;
     private DoorDir _doorDir;
     private bool _doorOpened;
 
@@ -35,11 +36,11 @@ public class MoveableDoor : DoorBase, IMoveable
             _doorOpened = true;
             if (_doorDir == DoorDir.Down || _doorDir == DoorDir.Up)
             {
-                transform.parent.DOScaleY(0f, 2f).OnComplete(() => Destroy(transform.parent.gameObject));
+                transform.parent.DOScaleY(0f, duration).OnComplete(() => Destroy(transform.parent.gameObject));
             }
             else if (_doorDir == DoorDir.Left || _doorDir == DoorDir.Right)
             {
-                transform.parent.DOScaleX(0f, 2f).OnComplete(() => Destroy(transform.parent.gameObject));
+                transform.parent.DOScaleX(0f, duration).OnComplete(() => Destroy(transform.parent.gameObject));
             }
         }
         else if(isPlayer)

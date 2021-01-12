@@ -7,12 +7,13 @@ using UnityEngine.UIElements;
 
 public class ProgressBar : MonoBehaviour
 {
-    private float[] distanceCalculations;
-    private Vector3 _pinStartPosition;
+    public List<Transform> playerPositions;
     public List<RectTransform> pins;
     public List<Transform> startPosition;
-    private List<Vector3> finishPosition;
-    public List<Transform> playerPositions;
+
+    private float[] _distanceCalculations;
+    private Vector3 _pinStartPosition;
+    private List<Vector3> _courseFinishPosition;
     private float _maxDistance;
     
 
@@ -38,14 +39,15 @@ public class ProgressBar : MonoBehaviour
 
     void Initiate()
     {
-        finishPosition = new List<Vector3>();
-        _pinStartPosition = pins[0].transform.position;
-        finishPosition.Add(SpawnManager.Instance.finisLinePosition + Vector3.left * 3f);
-        finishPosition.Add(SpawnManager.Instance.finisLinePosition);
-        finishPosition.Add(SpawnManager.Instance.finisLinePosition+ Vector3.right * 3f);
+        _courseFinishPosition = new List<Vector3>();
+        _pinStartPosition = pins[0].transform.localPosition;
+        _courseFinishPosition.Add(SpawnManager.Instance.finisLinePosition + Vector3.left * 3f);
+        _courseFinishPosition.Add(SpawnManager.Instance.finisLinePosition);
+        _courseFinishPosition.Add(SpawnManager.Instance.finisLinePosition+ Vector3.right * 3f);
         
-        distanceCalculations = new float[finishPosition.Count];
-        _maxDistance = Vector3.Distance(finishPosition[1], startPosition[1].position + Vector3.back * 7f);
+        _distanceCalculations = new float[_courseFinishPosition.Count];
+        _maxDistance = Mathf.Abs(_courseFinishPosition[1].z - playerPositions[1].position.z);
+        Debug.LogFormat("MaxDistance: {0}", _maxDistance);
     }
 
     private void Update()
@@ -59,22 +61,20 @@ public class ProgressBar : MonoBehaviour
 
     void ProgressPin()
     {
-        
         CalculateDistance();
 
         for (int i = 0; i < pins.Count; i++)
         {
             //pins[i].transform.SetPositionAndRotation(new Vector3(100f * distanceCalculations[i], 0f, 0f),Quaternion.identity );
-            pins[i].transform.position = _pinStartPosition + Vector3.right * 1000f * distanceCalculations[i];
+            pins[i].transform.localPosition = _pinStartPosition + Vector3.right * 100f * _distanceCalculations[i] * 14f;
         }
-        
     }
 
     void CalculateDistance()
     {
-        for (int i = 0; i < distanceCalculations.Length; i++)
+        for (int i = 0; i < _distanceCalculations.Length; i++)
         {
-            distanceCalculations[i] = Vector3.Distance(playerPositions[i].position, startPosition[i].position + Vector3.back * 7f) / _maxDistance;
+            _distanceCalculations[i] = playerPositions[i].position.z / _maxDistance;
         }
     }
     

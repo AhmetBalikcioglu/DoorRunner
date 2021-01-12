@@ -46,7 +46,7 @@ public class ObstacleManager : Singleton<ObstacleManager>
         currentTrack.GetComponent<Renderer>().material = AmbianceManager.Instance.ChangeTrackColor();
         currentTrack.transform.position += Vector3.forward * iteration * _trackLength - Vector3.forward * _trackZIteratation;
 
-        lastObstaclePosition = Vector3.forward * iteration * _trackLength + Vector3.forward * 0.5f;
+        lastObstaclePosition = currentTrack.transform.position + Vector3.forward * _trackLength / 2f;
     }
 
 }

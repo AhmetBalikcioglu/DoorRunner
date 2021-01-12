@@ -22,6 +22,6 @@ public class CameraController : MonoBehaviour
     private void CameraAction()
     {
         Camera.main.transform.DOMove(new Vector3(transform.position.x +3f,transform.position.y - 2f,transform.position.z + 10f), 1.5f);
-        Camera.main.transform.DORotate(new Vector3(transform.rotation.x + 15f,-135f,transform.rotation.z), 2f);
+        Camera.main.transform.DORotate(new Vector3(transform.rotation.x + 15f,-145f,transform.rotation.z), 2f);
     }
 }

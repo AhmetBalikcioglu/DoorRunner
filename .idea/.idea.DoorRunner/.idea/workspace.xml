@@ -24,15 +24,25 @@
   <component name="ChangeListManager">
     <list default="true" id="b094d7da-ab47-4791-b6e8-0ac49399aeab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Flags.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Flags.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Future Pad Door - FREE/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Future Pad Door - FREE/Assets/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/TapToStartAnim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Animations/TapToStartAnim.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/AIMat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/AIMat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/AIMat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/AIMat2.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/DoorMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/DoorMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/Future_Door_MAT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/Future_Door_MAT.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance1.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance2.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/CameraController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +90,7 @@
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/ObstacleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/CameraController.cs" />
       </list>
     </option>
   </component>
@@ -133,6 +144,7 @@
       <workItem from="1609954655735" duration="9509000" />
       <workItem from="1610046488139" duration="1329000" />
       <workItem from="1610393646200" duration="1201000" />
+      <workItem from="1610493272938" duration="318000" />
     </task>
     <servers />
   </component>

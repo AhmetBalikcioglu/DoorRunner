@@ -42,8 +42,9 @@ public class SpawnManager : Singleton<SpawnManager>
             ObstacleManager.Instance.SpawnObstacles(i);
         }
 
-        finisLinePosition = ObstacleManager.Instance.lastObstaclePosition;
-        Instantiate(_finishLine, finisLinePosition, _finishLine.transform.rotation);
+        finisLinePosition = ObstacleManager.Instance.lastObstaclePosition + Vector3.forward * _finishLine.transform.GetChild(0).localScale.z / 2f;
+        Instantiate(_finishLine, finisLinePosition, Quaternion.identity);
+        finisLinePosition += Vector3.back * _finishLine.transform.GetChild(0).localScale.z / 3f;
     }
     
     

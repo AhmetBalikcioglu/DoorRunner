@@ -61,6 +61,7 @@
               <e p="FlagAssigner.cs" t="Include" />
               <e p="Gradient.cs" t="Include" />
               <e p="NicknameText.cs" t="Include" />
+              <e p="ParticleEffect.cs" t="Include" />
               <e p="Singleton.cs" t="Include" />
               <e p="Sound.cs" t="Include" />
             </e>

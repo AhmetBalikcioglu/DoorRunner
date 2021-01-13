@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c0c9febcae9e447bd280aecc5450ce, type: 3}
   m_Name: Ambiance2
   m_EditorClassIdentifier: 
-  cameraColorTop: {r: 0.46057317, g: 0.7746662, b: 0.8490566, a: 1}
-  cameraColorBottom: {r: 0.29803923, g: 0.35686275, b: 0.36078432, a: 1}
-  trackColor1: {r: 0.7372549, g: 0.5529412, b: 0.627451, a: 1}
-  trackColor2: {r: 0.8509804, g: 0.8156863, b: 0.87058824, a: 1}
-  doorColor: {r: 0.95686275, g: 0.3764706, b: 0.21176471, a: 1}
+  cameraColorTop: {r: 1, g: 0.9803922, b: 0.7137255, a: 1}
+  cameraColorBottom: {r: 1, g: 0.4, b: 0.3254902, a: 1}
+  trackColor1: {r: 0.85882354, g: 0.31764707, b: 0.21568628, a: 1}
+  trackColor2: {r: 1, g: 0.5176471, b: 0.38039216, a: 1}
+  doorColor: {r: 0.13725491, g: 0.38431373, b: 0.5411765, a: 1}

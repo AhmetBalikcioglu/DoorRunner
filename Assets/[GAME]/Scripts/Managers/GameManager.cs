@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
     public bool isGameStarted;
-
+    public bool isHelpNeeded;
     private void OnEnable()
     {
         if (Managers.Instance == null)

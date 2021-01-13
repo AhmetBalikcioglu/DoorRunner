@@ -15,14 +15,15 @@ public enum DoorDir
 public class MoveableDoor : DoorBase, IMoveable
 {
     public float duration;
+    public SwipeArrow arrow;
     private DoorDir _doorDir;
     private bool _doorOpened;
+    
 
     private void OnEnable()
     {
         InitiateDoorPivot();
         _doorOpened = false;
-
     }
    
     public void Move(UserInput userInput, bool isPlayer)
@@ -42,6 +43,14 @@ public class MoveableDoor : DoorBase, IMoveable
             {
                 transform.parent.DOScaleX(0f, duration).OnComplete(() => Destroy(transform.parent.gameObject));
             }
+            if (arrow != null)
+            {
+                if (GameManager.Instance.isHelpNeeded)
+                    EventManager.OnSwipeCompleted.Invoke();
+                arrow.ChangeArrowState(ArrowState.Hide);
+                Destroy(arrow.gameObject, 1f);
+            }
+           
         }
         else if(isPlayer)
             AudioManager.Instance.Play("WrongSwipe");
@@ -74,6 +83,8 @@ public class MoveableDoor : DoorBase, IMoveable
         transform.DetachChildren();
         doorPivot.position = PivotVector3();
         transform.SetParent(doorPivot);
+        if(arrow != null)
+            arrow.TurnArrow(_doorDir);
     }
 
     private Vector3 PivotVector3()
@@ -82,10 +93,10 @@ public class MoveableDoor : DoorBase, IMoveable
         switch (_doorDir)
         {
             case DoorDir.Up:
-                tempVec3 = transform.position + 3f * Vector3.up;
+                tempVec3 = transform.position + 1.5f * Vector3.up;
                 break;
             case DoorDir.Down:
-                tempVec3 = transform.position;
+                tempVec3 = transform.position + 1.5f * Vector3.down;
                 break;
             case DoorDir.Left:
                 tempVec3 = transform.position + Vector3.left;
@@ -99,6 +110,19 @@ public class MoveableDoor : DoorBase, IMoveable
         return tempVec3;
     }
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<Character>() == null)
+            return;
+        if (other.GetComponent<Character>().CharacterControllerType == CharacterControllerType.Player)
+        {
+            arrow.ChangeArrowState(ArrowState.Show);
+            if(GameManager.Instance.isHelpNeeded)
+                EventManager.OnSwipeNeeded.Invoke(_doorDir);
+        }
+
+    }
     private void OnTriggerExit(Collider other)
     {
         if (other.GetComponent<Character>() == null)
@@ -107,6 +131,7 @@ public class MoveableDoor : DoorBase, IMoveable
         EventManager.OnSwipeDetected.RemoveListener(Move);
         if(GameManager.Instance.isGameStarted)
             other.GetComponent<CharacterController>().IsRunning = true;
+
     }
 
 }

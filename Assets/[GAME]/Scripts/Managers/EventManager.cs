@@ -19,6 +19,8 @@ public static class EventManager
     public static InputEvent OnSwipeDetected = new InputEvent();
     public static UnityEvent OnTapDetected = new UnityEvent();
     public static UnityEvent OnSwipeFail = new UnityEvent();
+    
+    
 
     public static UnityEvent OnObstacleCreated = new UnityEvent();
 
@@ -26,6 +28,8 @@ public static class EventManager
 
     public static SwipeShowEvent OnSwipeNeeded = new SwipeShowEvent();
     public static UnityEvent OnSwipeCompleted = new UnityEvent();
+    public static UnityEvent OnWrongSwipe = new UnityEvent();
+    public static UnityEvent OnRightSwipe = new UnityEvent();
 
 
 }

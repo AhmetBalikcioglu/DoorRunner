@@ -18,7 +18,7 @@ public class SwipeArrow : MonoBehaviour
     {
         if (transform.position.x != 0 || !GameManager.Instance.isHelpNeeded)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             return;
         }
         gameObject.SetActive(true);

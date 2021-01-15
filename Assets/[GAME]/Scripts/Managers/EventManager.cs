@@ -24,8 +24,10 @@ public static class EventManager
 
     public static UnityEvent OnPlayerStartedRunning = new UnityEvent();
 
-    public static UnityEvent OnSwipeNeeded = new UnityEvent();
+    public static SwipeShowEvent OnSwipeNeeded = new SwipeShowEvent();
+    public static UnityEvent OnSwipeCompleted = new UnityEvent();
+
 
 }
-
+public class SwipeShowEvent : UnityEvent<DoorDir> { }
 public class InputEvent : UnityEvent<UserInput, bool> { }

@@ -31,7 +31,8 @@ public static class EventManager
     public static UnityEvent OnWrongSwipe = new UnityEvent();
     public static UnityEvent OnRightSwipe = new UnityEvent();
 
-
+    public static UnityEvent OnWrongSwipe = new UnityEvent();
+    public static UnityEvent OnRightSwipe = new UnityEvent();
 }
 public class SwipeShowEvent : UnityEvent<DoorDir> { }
 public class InputEvent : UnityEvent<UserInput, bool> { }

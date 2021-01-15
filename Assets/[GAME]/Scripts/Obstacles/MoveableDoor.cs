@@ -36,8 +36,8 @@ public class MoveableDoor : DoorBase, IMoveable
             {
                 EventManager.OnRightSwipe.Invoke();
                 AudioManager.Instance.Play("CorrectSwipe");
-            }
 
+            }
             _doorOpened = true;
             if (_doorDir == DoorDir.Down || _doorDir == DoorDir.Up)
             {
@@ -54,8 +54,6 @@ public class MoveableDoor : DoorBase, IMoveable
                 arrow.ChangeArrowState(ArrowState.Hide);
                 Destroy(arrow.gameObject, 1f);
             }
-            
-            
            
         }
         else if (isPlayer)

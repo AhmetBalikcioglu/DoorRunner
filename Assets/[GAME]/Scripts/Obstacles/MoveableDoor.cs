@@ -33,7 +33,11 @@ public class MoveableDoor : DoorBase, IMoveable
         if (userInput.ToString() == _doorDir.ToString())
         {
             if (isPlayer)
+            {
+                EventManager.OnRightSwipe.Invoke();
                 AudioManager.Instance.Play("CorrectSwipe");
+
+            }
             _doorOpened = true;
             if (_doorDir == DoorDir.Down || _doorDir == DoorDir.Up)
             {
@@ -52,8 +56,11 @@ public class MoveableDoor : DoorBase, IMoveable
             }
            
         }
-        else if(isPlayer)
+        else if (isPlayer)
+        {
+            EventManager.OnWrongSwipe.Invoke();
             AudioManager.Instance.Play("WrongSwipe");
+        }
 
 
         //Debug.LogFormat("UserInput: {0}, DoorDir: {1}", userInput.ToString(), _doorDir.ToString());

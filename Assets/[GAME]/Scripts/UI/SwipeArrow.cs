@@ -16,7 +16,7 @@ public class SwipeArrow : MonoBehaviour
 
     private void Start()
     {
-        if (transform.position.x != 0 || !GameManager.Instance.isHelpNeeded)
+        if (!(transform.position.x <= 0.5f && transform.position.x >= -0.5f && GameManager.Instance.isHelpNeeded))
         {
             Destroy(gameObject);
             return;
@@ -26,6 +26,8 @@ public class SwipeArrow : MonoBehaviour
 
     public void ChangeArrowState(ArrowState arrowState)
     {
+        if (!GameManager.Instance.isHelpNeeded)
+            return;
         _currentArrowState = arrowState;
         if (_currentArrowState == ArrowState.Hide)
         {

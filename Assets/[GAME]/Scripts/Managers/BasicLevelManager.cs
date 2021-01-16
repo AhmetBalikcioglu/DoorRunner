@@ -15,15 +15,15 @@ public class BasicLevelManager : Singleton<BasicLevelManager>
 
     public void NextLevel()
     {
-        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        int currentSceneBuildIndex = SceneManager.GetActiveScene().buildIndex;
 
-        if (++currentScene > _sceneCount)
+        if (currentSceneBuildIndex == _sceneCount-1)
         {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene(0);
         }
         else
         {
-            SceneManager.LoadScene(currentScene);
+            SceneManager.LoadScene(currentSceneBuildIndex+1);
         }
         
     }

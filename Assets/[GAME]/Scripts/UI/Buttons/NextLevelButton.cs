@@ -8,13 +8,13 @@ public class NextLevelButton : Button
     protected override void OnEnable()
     {
         base.OnEnable();
-        onClick.AddListener(() => EventManager.OnGameRestart.Invoke());
+        onClick.AddListener(() => { BasicLevelManager.Instance.NextLevel(); });
     }
 
     protected override void OnDisable()
     {
         base.OnEnable();
-        onClick.RemoveListener(() => EventManager.OnGameRestart.Invoke());
+        onClick.RemoveListener(() => { BasicLevelManager.Instance.NextLevel(); });
     }
 
 }

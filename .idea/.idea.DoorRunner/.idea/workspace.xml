@@ -24,25 +24,18 @@
   <component name="ChangeListManager">
     <list default="true" id="b094d7da-ab47-4791-b6e8-0ac49399aeab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Future Pad Door - FREE/Assets/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Future Pad Door - FREE/Assets/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Animations/TapToStartAnim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Animations/TapToStartAnim.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/AIMat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/AIMat1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/AIMat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/AIMat2.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/DoorMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/DoorMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/Future_Door_MAT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/Future_Door_MAT.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/GroundMat2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/PlayerMat2.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/ScriptableObjects/Ambiance3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameSceneYunus.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameSceneYunus.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/ProgressBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/ProgressBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/SwipeArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/SwipeArrow.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +82,9 @@
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Panels/LevelFail.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/ObstacleManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/ProgressBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -237,9 +231,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="941" y="253" width="678" height="534" key="find.popup/2560.0.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1610220571354" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610222349383">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610824652080">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/2560.0.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1610222349383" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/2560.0.1920.1040/0.0.2560.1040@0.0.2560.1040" timestamp="1610824652080" />
   </component>
 </project>

@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class GameManager : Singleton<GameManager>
 {
     public bool isGameStarted;
-    public bool isHelpNeeded;
+    public bool isHelpNeededHand;
+    public bool isHelpNeededArrow;
     private void OnEnable()
     {
         if (Managers.Instance == null)

@@ -3402,7 +3402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
       propertyPath: _courseLength
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
       propertyPath: _targetPosition1
@@ -3434,10 +3434,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4809356447309482315, guid: e851c4e51e2aa5c4a8582b27fc0773af,
         type: 3}
-    - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
-      propertyPath: finisLinePosition.z
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 5970155440234258610, guid: 5079cda003244e54cb6aa8620edd8ce9,
         type: 3}
       propertyPath: _lanes.Array.data[0]

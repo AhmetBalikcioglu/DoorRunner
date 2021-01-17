@@ -13,10 +13,13 @@ public enum ArrowState
 public class SwipeArrow : MonoBehaviour
 {
     public ArrowState _currentArrowState = ArrowState.Hide;
+    public MoveableDoor currentDoor;
 
+    private MeshRenderer _arrowMesh;
     private void Start()
     {
-        gameObject.SetActive(false);
+        _arrowMesh = GetComponent<MeshRenderer>();
+        _arrowMesh.enabled = false;
         
         if (transform.position.x <= 0.5f && transform.position.x >= -0.5f)
         {
@@ -33,27 +36,28 @@ public class SwipeArrow : MonoBehaviour
     }
     public void ArrowStateChecker()
     {
-        
         if (_currentArrowState == ArrowState.Hide)
         {
-            gameObject.SetActive(false);
+            _arrowMesh.enabled = false;
         }
         else if (_currentArrowState == ArrowState.Show)
         {
-            gameObject.SetActive(true);
+            _arrowMesh.enabled = true;
         }
         else if (_currentArrowState == ArrowState.Flash)
         {
-            gameObject.SetActive(true);
             StartCoroutine(FlashArrow());
-            
         }
     }
 
     private IEnumerator FlashArrow()
     {
+        _arrowMesh.enabled = true;
         yield return new WaitForSeconds(UIManager.Instance.arrowFlashTime);
-        gameObject.SetActive(false);
+        _arrowMesh.enabled = false;
+        yield return new WaitForSeconds(UIManager.Instance.arrowFlashTime * 2f);
+        if (!currentDoor.doorOpened)
+            ArrowStateChecker();
     }
 
     public void TurnArrow(DoorDir doorDirection)
@@ -71,5 +75,4 @@ public class SwipeArrow : MonoBehaviour
             transform.rotation = Quaternion.Euler(Vector3.forward * 90f);
         }
     }
-
 }

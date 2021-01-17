@@ -17,17 +17,17 @@ public class MoveableDoor : DoorBase, IMoveable
     public float duration;
     public SwipeArrow arrow;
     private DoorDir _doorDir;
-    private bool _doorOpened;
+    public bool doorOpened;
 
     private void OnEnable()
     {
         InitiateDoorPivot();
-        _doorOpened = false;
+        doorOpened = false;
     }
    
     public void Move(UserInput userInput, bool isPlayer)
     {
-        if (_doorOpened)
+        if (doorOpened)
             return;
         if (userInput.ToString() == _doorDir.ToString())
         {
@@ -37,7 +37,7 @@ public class MoveableDoor : DoorBase, IMoveable
                 AudioManager.Instance.Play("CorrectSwipe");
 
             }
-            _doorOpened = true;
+            doorOpened = true;
             if (_doorDir == DoorDir.Down || _doorDir == DoorDir.Up)
             {
                 transform.parent.DOScaleY(0f, duration).OnComplete(() => Destroy(transform.parent.gameObject));
@@ -69,7 +69,7 @@ public class MoveableDoor : DoorBase, IMoveable
 
     public override IEnumerator AIInputSelection(AIController AIController)
     {
-        while (!_doorOpened)
+        while (!doorOpened)
         {
             yield return new WaitForSeconds(LevelManager.Instance.AIDelayTime);
             UserInput AIInput = AIController.RandomAIInput();

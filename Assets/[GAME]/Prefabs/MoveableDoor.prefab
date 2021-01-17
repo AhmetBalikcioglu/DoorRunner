@@ -110,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 0.5
   arrow: {fileID: 1526685980948836553}
+  doorOpened: 0
 --- !u!1 &5144502492867544705
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,3 +234,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentArrowState: 0
+  currentDoor: {fileID: 1005754169907976215}

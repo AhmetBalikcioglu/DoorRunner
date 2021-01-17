@@ -24,8 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b094d7da-ab47-4791-b6e8-0ac49399aeab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Materials/Arrow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Materials/Arrow.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/MoveableDoor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/MoveableDoor.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/SwipeOutputFromFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/SwipeOutputFromFrame.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +140,7 @@
       <workItem from="1610046488139" duration="1329000" />
       <workItem from="1610393646200" duration="1201000" />
       <workItem from="1610493272938" duration="318000" />
-      <workItem from="1610884151231" duration="5911000" />
+      <workItem from="1610884151231" duration="6718000" />
     </task>
     <servers />
   </component>

@@ -42,34 +42,28 @@ public class SwipeOutputFromFrame : MonoBehaviour
         if (other.GetComponent<Character>().CharacterControllerType != CharacterControllerType.Player)
             return;
         
-        EventManager.OnWrongSwipe.AddListener(() =>
-        {
-            StopAllCoroutines();
-            StartCoroutine(FrameMaterialChangerFalse());
-        });
-        
-        EventManager.OnRightSwipe.AddListener(() =>
-        {
-            StopAllCoroutines();
-            StartCoroutine(FrameMaterialChangerTrue());
-        });
+        EventManager.OnWrongSwipe.AddListener(CoroutineStarterForFalse);
+        EventManager.OnRightSwipe.AddListener(CoroutineStarterForRight);
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.GetComponent<Character>().CharacterControllerType != CharacterControllerType.Player)
             return;
-        
-        EventManager.OnWrongSwipe.RemoveListener(() =>
-        {
-            StopAllCoroutines();
-            StartCoroutine(FrameMaterialChangerFalse());
-        });
-        
-        EventManager.OnRightSwipe.RemoveListener(() =>
-        {
-            StopAllCoroutines();
-            StartCoroutine(FrameMaterialChangerTrue());
-        });
+
+        EventManager.OnWrongSwipe.RemoveListener(CoroutineStarterForFalse);
+        EventManager.OnRightSwipe.RemoveListener(CoroutineStarterForRight);
+    }
+
+    void CoroutineStarterForRight()
+    {
+        StopAllCoroutines();
+        StartCoroutine(FrameMaterialChangerTrue());
+    }
+
+    void CoroutineStarterForFalse()
+    {
+        StopAllCoroutines();
+        StartCoroutine(FrameMaterialChangerFalse());
     }
 }

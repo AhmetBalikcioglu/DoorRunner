@@ -12,8 +12,8 @@ public class OutputManager : Singleton<OutputManager>
 
     private void Start()
     {
-        _rejectOutput = _rejected.GetComponent<Animator>();
-        _successOutput = _success.GetComponent<Animator>();
+        //_rejectOutput = _rejected.GetComponent<Animator>();
+        //_successOutput = _success.GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -21,8 +21,8 @@ public class OutputManager : Singleton<OutputManager>
         if (Managers.Instance == null)
             return;
         
-        EventManager.OnWrongSwipe.AddListener(AnimateRejectedOutput);
-        EventManager.OnRightSwipe.AddListener(AnimateSuccessOutput);
+        //EventManager.OnWrongSwipe.AddListener(AnimateRejectedOutput);
+        //EventManager.OnRightSwipe.AddListener(AnimateSuccessOutput);
 
     }
 
@@ -31,8 +31,8 @@ public class OutputManager : Singleton<OutputManager>
         if (Managers.Instance == null)
             return;
         
-        EventManager.OnSwipeFail.RemoveListener(AnimateRejectedOutput);
-        EventManager.OnRightSwipe.RemoveListener(AnimateSuccessOutput);
+        //EventManager.OnSwipeFail.RemoveListener(AnimateRejectedOutput);
+        //EventManager.OnRightSwipe.RemoveListener(AnimateSuccessOutput);
         
         
     }

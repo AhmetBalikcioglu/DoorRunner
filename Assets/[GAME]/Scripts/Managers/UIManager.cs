@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIManager : Singleton<UIManager>
 {
-    public float arrowFlashTime = 1f;
+    public float arrowFlashTime = 0.75f;
     private void OnEnable()
     {
         if (Managers.Instance == null)

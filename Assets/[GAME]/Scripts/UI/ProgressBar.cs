@@ -47,7 +47,7 @@ public class ProgressBar : MonoBehaviour
         
         _distanceCalculations = new float[_courseFinishPosition.Count];
         _maxDistance = Mathf.Abs(_courseFinishPosition[1].z - playerPositions[1].position.z);
-        Debug.LogFormat("MaxDistance: {0}", _maxDistance);
+        //Debug.LogFormat("MaxDistance: {0}", _maxDistance);
     }
 
     private void Update()

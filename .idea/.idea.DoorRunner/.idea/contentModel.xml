@@ -23,6 +23,7 @@
             <e p="Managers" t="Include">
               <e p="AmbianceManager.cs" t="Include" />
               <e p="AudioManager.cs" t="Include" />
+              <e p="BasicLevelManager.cs" t="Include" />
               <e p="CharacterManager.cs" t="Include" />
               <e p="EventManager.cs" t="Include" />
               <e p="GameManager.cs" t="Include" />
@@ -55,8 +56,6 @@
                 <e p="SwipeHandPanel.cs" t="Include" />
               </e>
               <e p="ProgressBar.cs" t="Include" />
-              <e p="RejectOutputText.cs" t="Include" />
-              <e p="SuccessOutputText.cs" t="Include" />
               <e p="SwipeArrow.cs" t="Include" />
             </e>
             <e p="Utilities" t="Include">

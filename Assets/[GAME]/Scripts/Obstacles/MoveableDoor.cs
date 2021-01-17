@@ -49,7 +49,7 @@ public class MoveableDoor : DoorBase, IMoveable
             }
             if (arrow != null)
             {
-                if (GameManager.Instance.isHelpNeeded)
+                if (GameManager.Instance.isHelpNeededHand)
                     EventManager.OnSwipeCompleted.Invoke();
                 arrow.ChangeArrowState(ArrowState.Hide);
                 Destroy(arrow.gameObject, 1f);
@@ -125,7 +125,7 @@ public class MoveableDoor : DoorBase, IMoveable
         if (other.GetComponent<Character>().CharacterControllerType == CharacterControllerType.Player)
         {
             arrow.ChangeArrowState(ArrowState.Show);
-            if(GameManager.Instance.isHelpNeeded)
+            if(GameManager.Instance.isHelpNeededHand)
                 EventManager.OnSwipeNeeded.Invoke(_doorDir);
         }
 

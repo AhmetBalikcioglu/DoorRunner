@@ -1912,7 +1912,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8184c1d26af5ff746ba4cef23fab4261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AIInputTimeDelay: 0.5
   usedInput: 
 --- !u!1 &999051300
 GameObject:
@@ -2662,7 +2661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8184c1d26af5ff746ba4cef23fab4261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AIInputTimeDelay: 1
   usedInput: 
 --- !u!1 &1495964725 stripped
 GameObject:
@@ -3405,7 +3403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
       propertyPath: _courseLength
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
       propertyPath: _targetPosition1
@@ -3533,6 +3531,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Managers
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677386388460154377, guid: 5079cda003244e54cb6aa8620edd8ce9,
+        type: 3}
+      propertyPath: isHelpNeededArrow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677386388460154377, guid: 5079cda003244e54cb6aa8620edd8ce9,
+        type: 3}
+      propertyPath: AIDelayTime
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}

@@ -14,14 +14,6 @@ public class SwipeOutputFromFrame : MonoBehaviour
     {
         FrameMaterial = GetComponent<Renderer>().material;
     }
-
-    private void OnEnable()
-    {
-        if (Managers.Instance == null)
-            return;
-        
-        //EventManager.OnWrongSwipe.AddListener(Fra);
-    }
     
     public IEnumerator FrameMaterialChangerFalse() 
     {

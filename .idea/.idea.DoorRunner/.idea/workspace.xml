@@ -23,7 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b094d7da-ab47-4791-b6e8-0ac49399aeab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/Managers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/Managers.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 6.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 7.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 7.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 8.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 8.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/BasicLevelManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/BasicLevelManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/NextLevelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/NextLevelButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/SwipeArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/SwipeArrow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/SwipeOutputFromFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/SwipeOutputFromFrame.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +58,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/PlayAgainButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/SwipeArrow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FinishLine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/NextLevelButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/OutputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/CountDown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,6 +69,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Panels/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/Character.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -67,7 +88,6 @@
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/CountDown.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/CharacterManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/ButtonAppend.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/FinishLine.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/UIManager.cs" />
@@ -80,13 +100,15 @@
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/ObstacleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/ProgressBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/SwipeArrow.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/EventManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/SwipeOutputFromFrame.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/NextLevelButton.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/BasicLevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/EventManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/SwipeArrow.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" />
-        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/SwipeOutputFromFrame.cs" />
+        <option value="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" />
       </list>
     </option>
   </component>
@@ -140,7 +162,7 @@
       <workItem from="1610046488139" duration="1329000" />
       <workItem from="1610393646200" duration="1201000" />
       <workItem from="1610493272938" duration="318000" />
-      <workItem from="1610884151231" duration="6718000" />
+      <workItem from="1610884151231" duration="9461000" />
     </task>
     <servers />
   </component>

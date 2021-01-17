@@ -3415,7 +3415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
       propertyPath: _courseLength
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
       propertyPath: _targetPosition1
@@ -3548,6 +3548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Managers
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677386388460154377, guid: 5079cda003244e54cb6aa8620edd8ce9,
+        type: 3}
+      propertyPath: isHelpNeededArrow
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}

@@ -12,23 +12,28 @@ public enum ArrowState
 
 public class SwipeArrow : MonoBehaviour
 {
-    ArrowState _currentArrowState = ArrowState.Hide;
+    public ArrowState _currentArrowState = ArrowState.Hide;
 
     private void Start()
     {
-        if (!(transform.position.x <= 0.5f && transform.position.x >= -0.5f && GameManager.Instance.isHelpNeededArrow))
+        gameObject.SetActive(false);
+        
+        if (transform.position.x <= 0.5f && transform.position.x >= -0.5f)
         {
-            gameObject.SetActive(false);
-            return;
+            if (LevelManager.Instance.isHelpNeededArrow)
+            {
+                _currentArrowState = ArrowState.Show;
+                ArrowStateChecker();
+            }
+            else
+            {
+                _currentArrowState = ArrowState.Flash;
+            }
         }
-        gameObject.SetActive(true);
     }
-
-    public void ChangeArrowState(ArrowState arrowState)
+    public void ArrowStateChecker()
     {
-        if (!GameManager.Instance.isHelpNeededArrow)
-            return;
-        _currentArrowState = arrowState;
+        
         if (_currentArrowState == ArrowState.Hide)
         {
             gameObject.SetActive(false);
@@ -39,13 +44,14 @@ public class SwipeArrow : MonoBehaviour
         }
         else if (_currentArrowState == ArrowState.Flash)
         {
+            gameObject.SetActive(true);
             StartCoroutine(FlashArrow());
+            
         }
     }
 
     private IEnumerator FlashArrow()
     {
-        gameObject.SetActive(true);
         yield return new WaitForSeconds(UIManager.Instance.arrowFlashTime);
         gameObject.SetActive(false);
     }

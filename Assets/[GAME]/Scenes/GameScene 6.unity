@@ -3415,7 +3415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
       propertyPath: _courseLength
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 960285152, guid: 5079cda003244e54cb6aa8620edd8ce9, type: 3}
       propertyPath: _targetPosition1

@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8132621389846166568}
   - component: {fileID: 8132621389846166569}
-  - component: {fileID: 6545204142197904163}
   - component: {fileID: 8132621389846166574}
   - component: {fileID: 8132621389846166571}
   - component: {fileID: 8132621389846166570}
   - component: {fileID: 5970155440234258610}
   - component: {fileID: 960285152}
+  - component: {fileID: 8677386388460154377}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -47,18 +47,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e204a3bc1ce7c1c43a097f84532e39d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6545204142197904163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8132621389846166575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c612a80c23f304e4ebe9c8e460f9cdc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &8132621389846166574
@@ -99,8 +87,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGameStarted: 0
-  isHelpNeededHand: 0
-  isHelpNeededArrow: 0
 --- !u!114 &5970155440234258610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,3 +128,17 @@ MonoBehaviour:
     type: 3}
   _targetPositions: []
   finisLinePosition: {x: 0, y: 0, z: 0}
+--- !u!114 &8677386388460154377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132621389846166575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c612a80c23f304e4ebe9c8e460f9cdc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHelpNeededHand: 0
+  isHelpNeededArrow: 0

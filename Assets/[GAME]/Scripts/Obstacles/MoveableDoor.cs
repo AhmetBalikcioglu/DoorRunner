@@ -18,7 +18,6 @@ public class MoveableDoor : DoorBase, IMoveable
     public SwipeArrow arrow;
     private DoorDir _doorDir;
     private bool _doorOpened;
-    
 
     private void OnEnable()
     {
@@ -49,9 +48,11 @@ public class MoveableDoor : DoorBase, IMoveable
             }
             if (arrow != null)
             {
-                if (GameManager.Instance.isHelpNeededHand)
+                if (LevelManager.Instance.isHelpNeededHand)
                     EventManager.OnSwipeCompleted.Invoke();
-                arrow.ChangeArrowState(ArrowState.Hide);
+                
+                arrow._currentArrowState = ArrowState.Hide;
+                arrow.ArrowStateChecker();
                 Destroy(arrow.gameObject, 1f);
             }
            
@@ -70,7 +71,7 @@ public class MoveableDoor : DoorBase, IMoveable
     {
         while (!_doorOpened)
         {
-            yield return new WaitForSeconds(AIController.AIInputTimeDelay);
+            yield return new WaitForSeconds(LevelManager.Instance.AIDelayTime);
             UserInput AIInput = AIController.RandomAIInput();
             Move(AIInput, false);
             //Debug.LogFormat("AIInput: {0}, DoorDir: {1}", AIInput.ToString(), _doorDir.ToString());
@@ -124,8 +125,8 @@ public class MoveableDoor : DoorBase, IMoveable
             return;
         if (other.GetComponent<Character>().CharacterControllerType == CharacterControllerType.Player)
         {
-            arrow.ChangeArrowState(ArrowState.Flash);
-            if(GameManager.Instance.isHelpNeededHand)
+            arrow.ArrowStateChecker();
+            if(LevelManager.Instance.isHelpNeededHand)
                 EventManager.OnSwipeNeeded.Invoke(_doorDir);
         }
 

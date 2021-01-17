@@ -8,7 +8,7 @@ public class SwipeOutputFromFrame : MonoBehaviour
 {
     //public Material FrameMaterialTrue;
    // public Material FrameMaterialFalse;
-    public Material FrameMaterial;
+    Material FrameMaterial;
 
     private void Awake()
     {
@@ -23,18 +23,15 @@ public class SwipeOutputFromFrame : MonoBehaviour
         //EventManager.OnWrongSwipe.AddListener(Fra);
     }
     
-    public IEnumerator FrameMaterialChangerFalse()
+    public IEnumerator FrameMaterialChangerFalse() 
     {
-        //Material TempMaterial = GetComponent<Renderer>().material;
         FrameMaterial.SetColor("_Color", Color.red * 2);
-        
         yield return new WaitForSeconds(0.5f);
         FrameMaterial.color = Color.white;
     }
     
     public IEnumerator FrameMaterialChangerTrue()
     {
-        
         FrameMaterial.SetColor("_Color", Color.green * 2);
         yield return new WaitForSeconds(0.5f);
         FrameMaterial.color = Color.white;

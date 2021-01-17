@@ -22,28 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b094d7da-ab47-4791-b6e8-0ac49399aeab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoorRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/Managers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Prefabs/Managers.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 6.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 7.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 7.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 8.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene 8.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Character/AIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/BasicLevelManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/BasicLevelManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Obstacles/MoveableDoor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/NextLevelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/Buttons/NextLevelButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/SwipeArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/UI/SwipeArrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/SwipeOutputFromFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/[GAME]/Scripts/Utilities/SwipeOutputFromFrame.cs" afterDir="false" />
-    </list>
+    <list default="true" id="b094d7da-ab47-4791-b6e8-0ac49399aeab" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +141,7 @@
       <workItem from="1610046488139" duration="1329000" />
       <workItem from="1610393646200" duration="1201000" />
       <workItem from="1610493272938" duration="318000" />
-      <workItem from="1610884151231" duration="9461000" />
+      <workItem from="1610884151231" duration="9977000" />
     </task>
     <servers />
   </component>

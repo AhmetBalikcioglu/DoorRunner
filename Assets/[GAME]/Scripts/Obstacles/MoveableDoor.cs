@@ -124,7 +124,7 @@ public class MoveableDoor : DoorBase, IMoveable
             return;
         if (other.GetComponent<Character>().CharacterControllerType == CharacterControllerType.Player)
         {
-            arrow.ChangeArrowState(ArrowState.Show);
+            arrow.ChangeArrowState(ArrowState.Flash);
             if(GameManager.Instance.isHelpNeededHand)
                 EventManager.OnSwipeNeeded.Invoke(_doorDir);
         }

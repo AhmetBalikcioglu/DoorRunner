@@ -14,7 +14,7 @@ public class GameManager : Singleton<GameManager>
         if (Managers.Instance == null)
             return;
 
-        Application.targetFrameRate = 30;
+        //Application.targetFrameRate = 30;
 
         EventManager.OnGameRestart.AddListener(GameRestart);
     }

@@ -8,8 +8,7 @@ using UnityEngine.Serialization;
 public class GameManager : Singleton<GameManager>
 {
     public bool isGameStarted;
-    public bool isHelpNeededHand;
-    public bool isHelpNeededArrow;
+   
     private void OnEnable()
     {
         if (Managers.Instance == null)

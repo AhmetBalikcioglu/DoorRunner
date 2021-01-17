@@ -975,9 +975,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385165552}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &385165557
 MonoBehaviour:
@@ -1531,7 +1531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &625255612
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1917,7 +1917,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8184c1d26af5ff746ba4cef23fab4261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AIInputTimeDelay: 0.5
   usedInput: 
 --- !u!1 &999051300
 GameObject:
@@ -1936,7 +1935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &999051301
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2396,7 +2395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -178.40002, y: -33.399902}
+  m_AnchoredPosition: {x: -178, y: -33.399902}
   m_SizeDelta: {x: 96, y: 173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093617816
@@ -2667,7 +2666,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8184c1d26af5ff746ba4cef23fab4261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AIInputTimeDelay: 1
   usedInput: 
 --- !u!1 &1495964725 stripped
 GameObject:

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour
 {
-    public float AIInputTimeDelay = 1f;
+    
     public List<int> usedInput = new List<int>();
     public UserInput RandomAIInput()
     {
